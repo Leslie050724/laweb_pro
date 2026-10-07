@@ -1106,7 +1106,12 @@ footer a{
   object-fit: cover;
   object-position: top;
 }
-
 .project-window {
   overflow: hidden;
+}
+@media (min-width: 769px) {
+  .project-image {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
