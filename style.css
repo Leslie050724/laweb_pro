@@ -1,3 +1,10 @@
+/* FUENTES (Montserrat alojada en la propia web, sin depender de Google) */
+@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(fonts/Montserrat-Regular.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:500;font-display:swap;src:url(fonts/Montserrat-Medium.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/Montserrat-SemiBold.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:swap;src:url(fonts/Montserrat-Bold.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:800 900;font-display:swap;src:url(fonts/Montserrat-ExtraBold.woff2) format("woff2")}
+
 :root{
   --navy:#050F24;
   --navy2:#071A3A;
@@ -262,13 +269,14 @@ a{
   font-weight:800;
 }
 
-.mock-site h2{
+.mock-site .mock-title{
+  font-weight:800;
   font-size:45px;
   line-height:1.02;
   margin:20px 0;
 }
 
-.mock-site h2 em{
+.mock-site .mock-title em{
   color:#55dfff;
   font-style:normal;
 }
@@ -278,7 +286,8 @@ a{
   margin-bottom:25px;
 }
 
-.mock-site button{
+.mock-site .mock-button{
+  display:inline-block;
   border:0;
   border-radius:30px;
   padding:12px 18px;
@@ -316,13 +325,14 @@ a{
   font-weight:800;
 }
 
-.phone-card h3{
+.phone-card .phone-title{
+  font-weight:800;
   font-size:22px;
   line-height:1.1;
   margin:45px 0 25px;
 }
 
-.phone-card h3 span{
+.phone-card .phone-title span{
   color:var(--cyan);
 }
 
@@ -712,7 +722,11 @@ a{
   letter-spacing:2px;
 }
 
-.project-content h3{
+.project-content .project-name{
+  font-weight:700;
+  color:var(--white);
+  line-height:1.3;
+  margin:10px 0 4px;
   font-size:32px;
 }
 
@@ -1021,7 +1035,8 @@ footer a{
     padding:35px 25px;
   }
 
-  .mock-site h2{
+  .mock-site .mock-title{
+  font-weight:800;
     font-size:29px;
   }
 
@@ -1031,7 +1046,8 @@ footer a{
     bottom:5px;
   }
 
-  .phone-card h3{
+  .phone-card .phone-title{
+  font-weight:800;
     font-size:16px;
     margin-top:35px;
   }
@@ -1077,7 +1093,7 @@ footer a{
     min-height:260px;
   }
 
-  .project-content h3{
+  .project-content .project-name{
     font-size:25px;
   }
 
@@ -1116,3 +1132,5 @@ footer a{
     margin: 0 auto;
   }
 }
+/* El sello de "Sobre LA WEB" era un óvalo: ahora es un círculo perfecto */
+.about-badge{width:220px;aspect-ratio:1;height:auto;justify-self:center}

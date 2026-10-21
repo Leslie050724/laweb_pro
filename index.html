@@ -7,9 +7,25 @@
 
   <title>Diseño Web en Gran Canaria | LA WEB</title>
 
-  <link rel="stylesheet" href="fonts/montserrat.css">
+  <link rel="canonical" href="https://lawebstudio.es/">
+  <meta name="theme-color" content="#050F24">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-  <link rel="preload" href="style.css" as="style">
+  <!-- Vista previa al compartir el enlace (WhatsApp, Instagram, Facebook...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="LA WEB">
+  <meta property="og:title" content="Diseño Web en Gran Canaria | LA WEB">
+  <meta property="og:description" content="Webs modernas, rápidas y adaptadas a móvil para negocios de Gran Canaria, con WhatsApp, reservas y formularios.">
+  <meta property="og:url" content="https://lawebstudio.es/">
+  <meta property="og:image" content="https://lawebstudio.es/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Las fuentes se cargan antes para que el texto no cambie de golpe -->
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 
   <script type="application/ld+json">
@@ -24,6 +40,14 @@
     "@type": "Place",
     "name": "Gran Canaria, España"
   },
+  "logo": "https://lawebstudio.es/favicon.svg",
+  "image": "https://lawebstudio.es/og-image.jpg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+34643334639",
+    "contactType": "customer service",
+    "availableLanguage": ["Spanish"]
+  },
   "sameAs": [
     "https://instagram.com/laweb_pro"
   ]
@@ -37,8 +61,8 @@
   <!-- HEADER -->
   <header class="header">
 
-    <a class="brand" href="#inicio" aria-label="LA WEB inicio">
-      <span class="brand-mark">LA</span>
+    <a class="brand" href="#inicio" aria-label="LA WEB, inicio">
+      <span class="brand-mark" aria-hidden="true">LA</span>
       <span class="brand-text">LA <b>WEB</b></span>
     </a>
 
@@ -51,7 +75,7 @@
       <a href="#servicios">Servicios</a>
       <a href="#precios">Precios</a>
       <a href="#trabajos">Trabajos</a>
-      <a href="#nosotros">Sobre LA</a>
+      <a href="#nosotros">Sobre nosotros</a>
       <a href="#contacto">Contacto</a>
 
       <a class="nav-cta"
@@ -109,7 +133,7 @@
       </div>
 
 
-      <div class="hero-visual" aria-label="Vista previa de una web">
+      <div class="hero-visual" aria-hidden="true">
 
         <div class="glow"></div>
 
@@ -125,18 +149,18 @@
 
             <small>LA WEB</small>
 
-            <h2>
+            <div class="mock-title">
               Tu negocio<br>
               <em>en internet.</em>
-            </h2>
+            </div>
 
             <p>
               Una presencia online profesional.
             </p>
 
-            <button>
+            <span class="mock-button">
               Ver proyecto →
-            </button>
+            </span>
 
           </div>
 
@@ -149,10 +173,10 @@
 
           <small>LA WEB</small>
 
-          <h3>
+          <div class="phone-title">
             Tu negocio<br>
             <span>online.</span>
-          </h3>
+          </div>
 
           <div class="phone-button">
             Contactar
@@ -454,7 +478,6 @@
             <li>✓ Todo lo del plan Profesional</li>
             <li>✓ Diseño más avanzado</li>
             <li>✓ Secciones adicionales</li>
-            <li>✓ SEO básico</li>
             <li>✓ Animaciones avanzadas</li>
             <li>✓ 3 meses de mantenimiento</li>
           </ul>
@@ -499,32 +522,30 @@
 
     <div class="project-preview">
 
-      <span class="project-label">
-        PROYECTO 01
-      </span>
-
       <div class="project-window">
 
         <img
               src="web_foto_700.webp"
-              alt="Web de Sueño de Juventud"
+              alt="Página de inicio de la web de Sueño de Juventud"
               class="project-image"
-               >
+              width="700"
+              loading="lazy"
+              >
 
         <div class="project-content">
 
           <span>PROYECTO REALIZADO</span>
 
-          <h3>
+          <p class="project-name">
             Sueño de Juventud
-          </h3>
+          </p>
 
           <p>
             Bar · Cafetería
           </p>
 
           <a
-            href="https://leslie050724.github.io/sueno-de-juventud/"
+            href="https://suenodejuventud.es/"
             target="_blank"
             rel="noopener"
             class="btn primary"
@@ -541,7 +562,7 @@
     <div class="project-info">
 
       <span class="eyebrow">
-        PROYECTO 01
+        PROYECTO 01 · BAR CAFETERÍA
       </span>
 
       <h3>
@@ -555,7 +576,7 @@
       </p>
 
       <a
-        href="https://leslie050724.github.io/sueno-de-juventud/"
+        href="https://suenodejuventud.es/"
         target="_blank"
         rel="noopener"
         class="project-link"
@@ -725,7 +746,7 @@
 
     <div class="footer-brand">
 
-      <span class="brand-mark">
+      <span class="brand-mark" aria-hidden="true">
         LA
       </span>
 
