@@ -360,6 +360,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+
+.me{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-bottom:6px}.me-foto{width:190px;height:238px;border-radius:26px;object-fit:cover;object-position:50% 50%;border:3px solid var(--sun);box-shadow:0 0 0 6px rgba(47,128,237,.25),0 0 50px -6px var(--sky);animation:halo 3s ease-in-out infinite alternate}@keyframes halo{to{box-shadow:0 0 0 9px rgba(47,128,237,.35),0 0 70px 0 var(--sun)}}.me-sub{margin:6px 0 0!important;color:var(--sun);font-weight:700}
+.offer{padding-block:clamp(36px,6vw,56px);background:linear-gradient(110deg,#1561DC,#1B87E6 55%,#0E3C8C)}.offer-in{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 40px;align-items:center}.offer h2{font-size:clamp(1.9rem,4.4vw,3rem)}.offer .lead{margin-top:12px;color:#EAF3FF}.offer .btn-sun{background:#fff;color:#0D3F99;box-shadow:0 14px 40px -10px rgba(2,10,30,.8);animation:beat 2.4s ease-in-out infinite}@keyframes beat{50%{transform:translate(var(--bx,0),var(--by,0)) scale(1.05)}}
+.trust-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px}.trust-g>div{padding:22px;border-radius:18px;background:rgba(13,42,92,.5);border:1px solid var(--line);transition:transform .2s,border-color .2s}.trust-g>div:hover{transform:translateY(-5px);border-color:var(--sun)}.trust-g h3{font-size:1.1rem;margin-bottom:8px}.trust-g p{color:var(--muted);margin:0}
+.case{display:grid;gap:12px;margin:0 0 22px}.case div{padding-left:14px;border-left:3px solid var(--sky)}.case dt{font-weight:800;color:#fff}.case dd{margin:2px 0 0;color:var(--muted)}
+@media(max-width:900px){.offer-in,.trust-g{grid-template-columns:minmax(0,1fr)}.offer .btn{justify-self:start}}
 .legal{display:flex;flex-wrap:wrap;gap:8px 18px}
 </style>
 
@@ -469,6 +475,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   </div>
 </section>
 
+<section class="band offer" data-off="1">
+  <div class="wrap offer-in">
+    <div><h2>Te preparo una prueba de tu web gratis.</h2><p class="lead">Dime qué negocio tienes y te enseño cómo podría quedar, con su nombre y su estilo. Sin compromiso: si no te convence, no pagas nada.</p></div>
+    <a class="btn btn-sun" href="https://wa.me/34643334639?text=Hola%20Leslie%2C%20quiero%20una%20prueba%20gratis%20de%20la%20web%20de%20mi%20negocio.">Quiero mi prueba gratis</a>
+  </div>
+</section>
+
 <section class="band" id="servicios">
   <div class="wrap">
     <h2>Lo que puedo hacer por tu negocio.</h2>
@@ -531,6 +544,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   </div>
 </section>
 
+<section class="band trust">
+  <div class="wrap">
+    <h2>Sin sorpresas.</h2>
+    <div class="trust-g">
+      <div><h3>Pagas el día de publicar</h3><p>No hay señal. El pago se hace cuando la web está lista para salir.</p></div>
+      <div><h3>Tu web, a tu nombre</h3><p>El dominio y el alojamiento van a tu nombre, y tras el pago puedes usar la web para tu negocio.</p></div>
+      <div><h3>Hablas conmigo</h3><p>Me escribes directamente por WhatsApp a mí, sin comerciales.</p></div>
+      <div><h3>Precio claro</h3><p>Planes de pago único. Si necesitas algo aparte, te lo digo antes.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="band" id="trabajos">
   <div class="wrap">
     <h2>Trabajo real, abierto al público.</h2>
@@ -547,8 +572,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
       </div>
       <div>
         <h3>Sueño de Juventud</h3>
-        <p>Bar y cafetería. Rediseñé su web para un negocio local, con todo lo que sus clientes buscan a mano.</p>
-        <ul class="feat"><li>Carta</li><li>Galería</li><li>Ubicación</li><li>Contacto</li><li>WhatsApp directo</li></ul>
+        <p>Bar y cafetería de Vecindario, con sabor cubano.</p>
+        <dl class="case">
+          <div><dt>Antes</dt><dd>Una web con poco mensaje, botones laterales poco claros y una imagen de portada que no enseñaba lo que hace especial al bar.</dd></div>
+          <div><dt>Qué cambié</dt><dd>Nueva portada con su comida real, un mensaje claro, carta a mano, llamada directa, WhatsApp, reseñas y selector de idioma.</dd></div>
+          <div><dt>Qué mejoró</dt><dd>Ahora el cliente entiende en segundos qué ofrece el bar y puede ver la carta o contactar desde el móvil.</dd></div>
+        </dl>
         <a class="btn btn-sun" href="https://suenodejuventud.es/" target="_blank" rel="noopener">Ver la web</a>
       </div>
     </div>
@@ -570,9 +599,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <section class="band mist" id="sobre-mi">
   <div class="wrap split">
     <div>
-      <h2>Tu visión, mi trabajo.</h2>
-      <p>Soy Leslie, y LA WEB nace para ayudar a pequeños negocios de Gran Canaria a tener una presencia online moderna, clara y profesional.</p>
-      <p>Quien te atiende es quien diseña y programa tu web. Trabajo cada proyecto pensando en algo sencillo: que tus clientes puedan encontrarte, conocerte y contactar contigo sin complicaciones.</p>
+      <div class="me"><img class="me-foto" src="foto-leslie.webp" alt="Leslie Vega, creador de LA WEB" width="260" height="325" loading="lazy"><div><h2>Hola, soy Leslie.</h2><p class="me-sub">Vivo en Vecindario y hago webs para negocios de aquí.</p></div></div>
+      <p>Estudio Desarrollo de Aplicaciones Multiplataforma y trabajo en hostelería, así que sé lo que necesita un negocio cuando entra un cliente con prisa.</p>
+      <p>Me gusta la informática y todo lo que tenga que ver con webs. Empecé con la del bar de mi abuelo y ahora quiero ayudar a más negocios de Gran Canaria.</p>
+      <p>Quien te atiende es quien diseña y programa tu web. Sin intermediarios.</p>
     </div>
     <div class="faq">
       <details open><summary>¿Cuánto tarda en hacerse una web?</summary><p>Depende del proyecto, pero una web para un negocio local puede estar lista en pocos días una vez tenga toda la información y las fotografías.</p></details>
